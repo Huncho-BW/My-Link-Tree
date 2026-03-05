@@ -1,0 +1,180 @@
+@media (min-width:1025px) {
+    .createFrame {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       padding: 32px;
+    }
+
+    .CreateBackground {
+        margin-top: 51px;
+        background-color: #FFFFFF;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 476px;
+       
+        border: 1px solid #E5E7EB;
+
+    }
+
+    .inputCreateBorder {
+        width: 396px;
+        width: 100%;
+        min-width: none;
+        height: 48px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        border: 1px solid #D1D5DB;
+        border-radius: 8px;
+        padding: 12px 16px;
+
+    }
+
+    .inputCreateBorder:focus-within{
+      
+            box-shadow: 0 0 0 3px rgba(99, 60, 255, 0.2);
+    }
+
+      
+
+        .CreateBorder {
+           
+            width: 100%;
+            min-width: none;
+            height: 48px;
+    
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            padding: 12px 16px;
+    
+        }
+
+    input {
+        outline: none;
+        width: 100%;
+    }
+}
+
+@media (min-width:641px) and (max-width:1024px) {
+    .createFrame {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 32px;
+            
+        }
+    
+        .CreateBackground{
+            margin-top: 51px;
+            background-color: #FFFFFF;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            width: 476px;
+           
+    
+            border: 1px solid #E5E7EB;
+    
+        }
+    
+        .inputCreateBorder {
+            width: 396px;
+            width: 100%;
+            min-width: none;
+            height: 48px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            padding: 12px 16px;
+    
+        }
+                 .CreateBorder {
+        
+                     width: 100%;
+                     min-width: none;
+                     height: 48px;
+        
+                     border: 1px solid #D1D5DB;
+                     border-radius: 8px;
+                     padding: 12px 16px;
+        
+                 }
+
+                .inputCreateBorder:focus-within {
+                   
+                    box-shadow: 0 0 0 3px rgba(99, 60, 255, 0.2);
+                }
+    
+        input {
+            outline: none;
+            width: 100%;
+        }
+}
+
+@media (max-width:640px) {
+    .createFrame {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 32px;
+            
+        }
+    
+        .CreateBackground {
+            margin-top: 51px;
+            background-color: #FFFFFF;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            width: 311px;
+           
+    
+            border: 1px solid #E5E7EB;
+    
+        }
+    
+        .inputCreateBorder {
+            width: 311px;
+            width: 100%;
+            min-width: none;
+            height: 48px;
+          display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            padding: 12px 16px;
+    
+        }
+                 .CreateBorder {
+        
+                     width: 100%;
+                     min-width: none;
+                     height: 48px;
+        
+                     border: 1px solid #D1D5DB;
+                     border-radius: 8px;
+                     padding: 12px 16px;
+        
+                 }
+
+                .inputCreateBorder:focus-within {
+                    
+                    box-shadow: 0 0 0 3px rgba(99, 60, 255, 0.2);
+                }
+    
+        input {
+            outline: none;
+            width: 100%;
+        }
+}

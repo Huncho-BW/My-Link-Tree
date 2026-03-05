@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+body{
+    background-color: whitesmoke;
+}
+
+
+.navBord{
+   max-width: 114px;
+    height: 46px;
+    padding: 11px 27px 11px 27px;
+    border: 1px solid #633CFF;
+    border-radius: 8px;
+    color: #633CFF;
+
+}
+
+.navLink{
+    height: 46px;
+   
+        border: 1px solid #633CFF;
+        border-radius: 8px;
+        color: #633CFF;
+        background-color: #EFEBFF;
+}
+
+.navPad{
+    
+display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 27px 11px 27px;
+    gap: 8px;
+}

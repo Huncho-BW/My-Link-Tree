@@ -1,0 +1,257 @@
+
+@media (min-width:1025px) {
+.backGround {
+        width: 100%;
+        height: 357px;
+        background-color: #633CFF;
+        border-radius: 0 0 32px 32px;
+        padding: 24px;
+        position: relative;
+
+    }
+
+    .backGroundSearch {
+        width: 100%;
+        height: 78px;
+        background-color: white;
+        border-radius: 12px;
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .layoutProfile {
+        display: flex;
+        flex-direction: column;
+        width: 349px;
+       
+      
+        background-color: #FFFFFF;
+
+        border-radius: 24px;
+        position: absolute;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-right: 56px;
+        padding-left: 56px;
+
+        top: 40%;
+
+
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .borderLayout {
+        width: 237px;
+        height: 56px;
+       
+       padding: 18px 16px 18px 16px ;
+        border-radius: 12px;
+    }
+
+
+    .layoutTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .layoutTwo>img {
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+        border: 2px solid blue;
+    }
+
+    .layoutTwoForH1{
+        display: flex;
+        color: #333333;
+        gap: 5px;
+        font-size: 30px;
+        font-weight: 700;
+
+    }
+
+    .borderTwo {
+        margin-top: 56px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+}
+
+
+@media (min-width:641px) and (max-width:1024px) {
+    .backGround {
+            width: 100%;
+            height: 357px;
+            background-color: #633CFF;
+            border-radius: 0 0 32px 32px;
+            padding: 24px;
+            position: relative;
+    
+        }
+    
+        .backGroundSearch {
+            width: 100%;
+            height: 78px;
+            background-color: white;
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+        }
+    
+        .layoutProfile {
+            display: flex;
+            flex-direction: column;
+            width: 349px;
+            min-width: none;
+            
+           
+            background-color: #FFFFFF;
+            
+            border-radius: 24px;
+            position: absolute;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            padding-right: 56px;
+            padding-left: 56px;
+    
+            top: 40%;
+    
+    
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+                 .layoutTwoForH1 {
+                     display: flex;
+                     color: #333333;
+                     gap: 5px;
+                     font-size: 2px;
+                     font-weight: 700;
+        
+                 }
+    
+        .borderLayout {
+            width: 237px;
+            height: 56px;
+            background-color: #633CFF;
+            border-radius: 12px;
+            padding: 18px 16px 18px 16px;
+        }
+    
+    
+        .layoutTwo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .layoutTwo>img {
+            width: 104px;
+            height: 104px;
+            border-radius: 50%;
+            border: 2px solid blue;
+        }
+    
+        .borderTwo {
+            margin-top: 56px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+           
+           
+               
+    
+        }
+}
+
+
+@media (max-width:640px) {
+    .backGroundSearch {
+            width: 100%;
+            height: 78px;
+            background-color: white;
+            
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+        }
+
+                 .layoutTwoForH1 {
+                     display: flex;
+                     color: #333333;
+                     gap: 5px;
+                     font-size: 18px;
+                     font-weight: 700;
+        
+                 }
+
+                .layoutProfile {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 349px;
+                    min-width: none;
+                    width: 100%;
+                   
+                    
+        
+                    background-color: white;
+                    position: relative;
+                    padding-top: 48px;
+                    padding-bottom: 48px;
+                    padding-right: 56px;
+                    padding-left: 56px;
+        
+                    top: 40%;
+        
+        
+                    left: 50%;
+                    transform: translate(-50%);
+                }
+
+
+                           .layoutTwo {
+                               display: flex;
+                               flex-direction: column;
+                               justify-content: center;
+                               align-items: center;
+                           }
+            
+                           .layoutTwo>img {
+                               width: 104px;
+                               height: 104px;
+                               border-radius: 50%;
+                               border: 2px solid blue;
+                           }
+
+                          .borderTwo {
+                              margin-top: 56px;
+                              display: flex;
+                              flex-direction: column;
+                              gap: 20px;
+            
+                          }
+
+                                                   .borderLayout {
+                                                       width: 237px;
+                                                       height: 56px;
+                                                       background-color: #633CFF;
+                                                       border-radius: 12px;
+                                                        padding: 18px 16px 18px 16px;
+                                                   }
+}
+
+

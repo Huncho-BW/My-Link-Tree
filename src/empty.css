@@ -1,0 +1,569 @@
+
+@media (min-width: 1368px) {
+    .emptySection{ grid-template-columns: minmax(560px, 1fr) minmax(808px, 1fr);}
+}
+
+
+@media (min-width:1025px) {
+    
+    .empthHero{
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        background-color: white;
+        padding: 24px;
+    }
+
+    .emptySection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+
+
+
+    .leftEmpty{
+        flex: 560px 1 1;
+        height: 858px;
+        width: 100%;
+        min-width: none;
+        border-radius: 12px;
+        border: 1px solid white;
+        background-color: #FFFFFF;
+        
+    }
+    .rightEmpty{
+        flex: 808px 1 1;
+            height: 858px;
+            
+            min-width: none;
+           
+            padding: 40px;
+          
+            display: flex;
+            flex-direction: column;
+
+            border-radius: 12px;
+                border: 1px solid white;
+                background-color: #FFFFFF;
+    }
+
+
+    .addLinkBorder{
+        
+        flex: 728px 1 1;
+        border-radius: 8px;
+        width: 100%;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .addLinkBorder:focus-within{
+        
+            box-shadow: 0 0 0 3px rgba(99, 60, 255, 0.2);
+    }
+    .custLinkBorder{
+
+   flex: 728px 1 1;
+   width: 100%;
+    border-radius: 12px;
+    
+    overflow: hidden;
+       
+    height: 469px;
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+   
+    }
+
+        .flootBorder{
+          border-top: 1px solid ;
+          margin-top: 40px;
+            display: flex;
+            flex: 808px 1 1;
+            height: 95px;
+           padding: 24px;
+           justify-content: end;
+        }
+
+        .flootBorder > button{
+            width: 91px;
+            height: 46px;
+            background-color: #633CFF;
+            color: white;
+            border-radius: 8px;
+
+        }
+
+                 .flootBorder > button:hover{
+     background-color: #BEADFF;
+        }
+
+                .addLink{
+                    flex: 728px 1 1;
+                    width: 100%;
+                    max-height: 228px;
+                    background-color: #FAFAFA;
+                    padding: 20px;
+                    border-radius: 12px;
+                     display: flex;
+                     flex-direction: column;
+                     
+                }
+
+                .BorderAddLink{
+                    
+                    flex: 728px 1 1;
+                    max-height: 48px;
+                    background-color: #FFFFFF;
+                    border-radius: 12px;
+                    padding: 16px;
+                      border: 1px solid #633CFF;
+                    display: flex;
+                    color: #633CFF;
+                    justify-content: center;
+                    align-items: center;
+                    
+                   
+                }
+                .BorderAddLink:hover{
+                    background-color: #EFEBFF;
+                }
+                                .addLinkBorder {
+                
+                                    flex: 688px 1 1;
+                                    height: 48px;
+                                    background-color: #FFFFFF;
+                                    padding: 16px;
+                
+                                    display: flex;
+                                    justify-content: start;
+                                    align-items: center;
+                
+                
+                                }
+
+                
+
+                .dropDwon{
+                    border: 1px solid #D1D5DB;
+                    border-radius: 8px;
+                    padding: 12px 16px;
+                    width: 100%;
+                    height: 343px;
+                    background-color: #FFFFFF;
+                    margin-top: 4rem;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                }
+                
+  .boder{
+    border:1px solid #D1D5DB;
+    width: 100%;
+    height: 1px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+  }
+        .imgIcon {
+            max-width: 249px;
+    
+            height: 160px;
+        }
+
+                .custLink {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+                    flex: 601px 1 1;
+                    width: 100%;
+                    height: 344px;
+                    background-color: #FAFAFA;
+        
+                }
+                .icon{
+                    display: none;
+                }
+
+}
+
+@media (min-width:641px) and (max-width:1024px) {
+.leftEmpty {
+        display: none;
+
+    }
+
+         .icon {
+             display: none;
+         }
+
+   
+
+         .empthHero {
+             display: flex;
+             justify-content: space-between;
+             gap: 24px;
+             background-color: white;
+            padding: 24px;
+         }
+    
+         .emptySection {
+             display: block;
+           
+          
+             margin-top: 20px;
+         }
+
+                         .rightEmpty {
+                             flex: 808px 1 1;
+                             min-height: 858px;
+            
+                             min-width: none;
+            
+                             padding: 40px;
+            
+                             display: flex;
+                             flex-direction: column;
+            
+                             border-radius: 12px;
+                             border: 1px solid white;
+                             background-color: #FFFFFF;
+                             
+                         }
+            
+            
+                                                .addLink {
+                                                    flex: 640px 1 1;
+                                                    width: 100%;
+                     width:none;                               max-height: 228px;
+                                                    background-color: #FAFAFA;
+                                                    padding: 20px;
+                                                    border-radius: 12px;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                   
+                        
+                                                }
+                        
+                                                .BorderAddLink {
+                        
+                                                    flex: 688px 1 1;
+                                                    height: 48px;
+                                                    background-color: #FFFFFF;
+                                                    border-radius: 12px;
+                                                        padding: 16px;
+                                                        border: 1px solid #633CFF;
+                                                        display: flex;
+                                                        color: #633CFF;
+                                                        justify-content: center;
+                                                        align-items: center;
+                        
+                                                }
+
+                                                                                                .BorderAddLink:hover {
+                                                                                                    background-color: #EFEBFF;
+                                                                                                }
+                        
+                                                .addLinkBorder {
+                        
+                                                    flex: 688px 1 1;
+                                                    height: 48px;
+                                                    background-color: #FFFFFF;
+                                                    padding: 16px;
+                                                      
+                                                    display: flex;
+                                                    justify-content: start;
+                                                    align-items: center;
+                        
+                                                     gap: 10px;
+                                                }
+
+                                                                                                .addLinkBorder:focus-within {
+                                                                                                
+                                                                                                    box-shadow: 0 0 0 3px rgba(99, 60, 255, 0.2);
+                                                                                                }
+                         .custLinkBorder {
+            
+                             flex: 641px 1 1;
+                             width: 100%;
+                             border-radius: 12px;
+                            
+                             min-height: 509px;
+                             
+                             display: flex;
+                             flex-direction: column;
+                             gap: 12px;
+                             
+                            margin-top: 12px;
+                             
+                               
+                         }
+            
+                         .flootBorder {
+                             border-top: 1px solid;
+                             margin-top: 40px;
+                             display: flex;
+                             flex: 808px 1 1;
+                             height: 95px;
+                         padding: 24px;
+                             justify-content: end;
+                         }
+
+                          .flootBorder>button {
+                              width: 91px;
+                              height: 46px;
+                              background-color: #633CFF;
+                              color: white;
+                              border-radius: 8px;
+            
+                          }
+                                                        .flootBorder>button:hover {
+                                                            background-color: #BEADFF;
+                                                        }
+                                                 .custLink {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                     padding: 20px;
+                                                     flex: 601px 1 1;
+                                                     width: 100%;
+                                                     height: 344px;
+                                                    background-color: #FAFAFA;
+                      
+                                                 }
+
+                                                                                                  .imgIcon {
+                                                                                                      max-width: 249px;
+                                                
+                                                                                                      height: 160px;
+                                                                                                  }
+
+                                                                                                                                                                                                  .dropDwon {
+                                                                                                                                                                                                      border: 1px solid #D1D5DB;
+                                                                                                                                                                                                      border-radius: 8px;
+                                                                                                                                                                                                      padding: 12px 16px;
+                                                                                                                                                                                                      width: 100%;
+                                                                                                                                                                                                      height: 343px;
+                                                                                                                                                                                                      background-color: #FFFFFF;
+                                                                                                                                                                                                      margin-top: 4rem;
+                                                                                                                                                                                                      overflow: hidden;
+                                                                                                                                                                                                      overflow-y: scroll;
+                                                                                                                                                                                                  }
+                                                                                                                                                                                                                                                                                                                                                                         .boder {
+                                                                                                                                                                                                                                                                                                                                                                         border: 1px solid #D1D5DB;
+                                                                                                                                                                                                                                                                                                                                                                             width: 100%;
+                                                                                                                                                                                                                                                                                                                                                                             height: 1px;
+                                                                                                                                                                                                                                                                                                                                                                             margin-top: 12px;
+                                                                                                                                                                                                                                                                                                                                                                             margin-bottom: 12px;
+                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                         }
+}
+
+@media (max-width:640px) {
+.leftEmpty {
+        display: none;
+
+    }
+
+         .iconHid {
+             display: none;
+         }
+
+    .empthHero {
+        display: flex;
+        justify-content: space-between;
+       
+        padding: 16px 16px 16px 24px;
+        background-color: white;
+       
+    }
+
+    .emptySection {
+        display: block;
+
+
+        margin-top: 16px;
+    }
+
+
+
+    .rightEmpty {
+        flex: 375px 1 1;
+    min-height: 738px;
+       
+
+        min-width: none;
+
+        padding: 40px;
+
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 12px;
+        border: 1px solid white;
+        background-color: #FFFFFF;
+       
+    }
+    .rightEmpty > div > h1{
+        font-size: 24px;
+        white-space: nowrap;
+    }
+
+
+    .addLink {
+        flex: 295px 1 1;
+        width: 100%;
+        max-height: 228px;
+        background-color: #FAFAFA;
+        padding: 20px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+       
+
+    }
+
+    .BorderAddLink {
+
+        flex: 688px 1 1;
+        height: 48px;
+        background-color: #FFFFFF;
+        border-radius: 12px;
+            padding: 16px;
+            border: 1px solid #633CFF;
+            display: flex;
+            color: #633CFF;
+            justify-content: center;
+            align-items: center;
+
+
+    }
+
+        .BorderAddLink:hover {
+            background-color: #EFEBFF;
+        }
+
+    .addLinkBorder {
+
+        flex: 225px 1 1;
+        max-height: 48px;
+        background-color: #FFFFFF;
+        padding: 16px;
+      gap: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+
+    }
+.addLinkBorder:focus-within {
+   
+    box-shadow: 0 0 0 3px rgba(99, 60, 255, 0.2);
+}
+    .custLinkBorder {
+
+        flex: 295px 1 1;
+        width: 100%;
+        border-radius: 12px;
+        
+
+        min-height: 377px;
+        
+       max-width: 706px;
+      margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        
+        
+
+    }
+
+    .custLink{
+        padding: 20px;
+        flex: 295px 1 1;
+            width: 100%;
+            max-height: 377px;
+        background-color: #FAFAFA;
+    }
+
+    .imgIcon{
+        max-width: 124px;
+       
+        height: 80px;
+    }
+
+    .padBorder{
+        width: 225px;
+        height: 120px;
+    }
+    .pad{
+        font-size: 16px;
+        letter-spacing: 0px;
+        font-weight: 400;
+        text-align: center;
+        white-space: wrap;
+        word-break:break-all;
+    }
+
+    .flootBorder {
+        border-top: 1px solid;
+        margin-top: 24px;
+        display: flex;
+        flex: 311px 1 1;
+        padding: 16px;
+        max-height: 45px;
+        
+        justify-content: center;
+        
+    }
+
+         .flootBorder>button {
+             width: 311px;
+             width: 100%;
+             height: 46px;
+             background-color: #633CFF;
+             color: white;
+             border-radius: 8px;
+    
+         }
+           .flootBorder > button:hover{
+     background-color: #BEADFF;
+        }
+
+
+        .dropDwon {
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            padding: 12px 16px;
+            width: 100%;
+            height: 343px;
+            background-color: #FFFFFF;
+            margin-top: 4rem;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+
+           .boder {
+               border: 1px solid #D1D5DB;
+               width: 100%;
+               height: 1px;
+               margin-top: 12px;
+               margin-bottom: 12px;
+    
+           }
+
+           .hidIcon{
+            display: none;
+           }
+}
