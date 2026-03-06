@@ -41,7 +41,7 @@ export default function Preview() {
           <div className="navBord text-[16px] font-[600] whitespace-nowrap hover:bg-[#EFEBFF]">
             <button onClick={() => navigate(-1)}>Back to Editor</button>
           </div>
-          <div className=" h-[24] border-[1px] bg-[#633CFF] text-[#FFFFFF] rounded-[8px] pt-[11px] pb-[11px] pl-[27px] pr-[27px] text-[16px] font-[600] whitespace-nowrap ">
+          <div className=" h-[24] border-[1px] bg-[#633CFF] text-[#FFFFFF] rounded-[8px] pt-[11px] pb-[11px] w-[133px] pl-[27px] pr-[27px] text-[16px] font-[600] whitespace-nowrap ">
             <button className="cursor-pointer" onClick={handleShare}>
               Share Link
             </button>

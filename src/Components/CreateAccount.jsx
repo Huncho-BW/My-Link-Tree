@@ -69,7 +69,13 @@ export default function CreateAccount() {
               <label className="text-[12px] font-[400] text-[#333333]">
                 Email Address
               </label>
-              <div className="inputCreateBorder">
+              <div
+                className={
+                  error.email
+                    ? "border border-[#FF3939]  inputCreateBorder"
+                    : "inputCreateBorder border border-[#D1D5DB]"
+                }
+              >
                 <span>
                   <AiOutlineMail />
                 </span>{" "}
@@ -82,13 +88,23 @@ export default function CreateAccount() {
                     setFormData({ ...formData, email: e.target.value });
                   }}
                 />
-                {error.email && <p>{error.email}</p>}
+                {error.email && (
+                  <p className="text-[12px] font-[400] text-[#FF3939]">
+                    {error.email}
+                  </p>
+                )}
               </div>
 
               <label className="mt-[24px] text-[12px] font-[400] text-[#333333]">
                 Create Passwords
               </label>
-              <div className="inputCreateBorder">
+              <div
+                className={
+                  error.password
+                    ? "border border-[#FF3939]  inputCreateBorder"
+                    : "inputCreateBorder border border-[#D1D5DB]"
+                }
+              >
                 <span>
                   <CiLock />
                 </span>
@@ -105,13 +121,23 @@ export default function CreateAccount() {
                   }}
                 />
 
-                {error.password && <p>{error.password}</p>}
+                {error.password && (
+                  <p className="text-[12px] font-[400] text-[#FF3939]">
+                    {error.password}
+                  </p>
+                )}
               </div>
 
               <label className="mt-[24px] text-[12px] font-[400] text-[#333333]">
                 Confirm Passwords
               </label>
-              <div className="inputCreateBorder">
+              <div
+                className={
+                  error.comfirmPassword
+                    ? "border border-[#FF3939]  inputCreateBorder"
+                    : "inputCreateBorder border border-[#D1D5DB]"
+                }
+              >
                 <span>
                   <CiLock />
                 </span>
@@ -127,7 +153,11 @@ export default function CreateAccount() {
                     });
                   }}
                 />
-                {error.comfirmPassword && <p>{error.comfirmPassword}</p>}
+                {error.comfirmPassword && (
+                  <p className="text-[12px] font-[400] text-[#FF3939]">
+                    {error.comfirmPassword}
+                  </p>
+                )}
               </div>
               <p className="mt-[24px] text-[12px] font-[400] text-[#737373]">
                 Password must contain at least 8 characters

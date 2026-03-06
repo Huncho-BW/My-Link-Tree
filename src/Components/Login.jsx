@@ -56,7 +56,13 @@ export default function Login() {
           </div>
           <div className="flex flex-col mt-[40px]">
             <label className="text-[12px] font-[400]">Email Address</label>
-            <div className="inputLoginBorder">
+            <div
+              className={
+                error.email
+                  ? "border border-[#FF3939] inputLoginBorder "
+                  : "inputLoginBorder border border-[#D1D5DB] "
+              }
+            >
               <span>
                 <AiOutlineMail />
               </span>{" "}
@@ -69,13 +75,23 @@ export default function Login() {
                 id=""
                 placeholder="Email address"
               />
-              {error.email && <p>{error.email}</p>}
+              {error.email && (
+                <p className="text-[12px] font-[400] text-[#FF3939]">
+                  {error.email}
+                </p>
+              )}
             </div>
 
             <label className="mt-[24px] text-[12px] font-[400]">
               Passwords
             </label>
-            <div className="inputLoginBorder">
+            <div
+              className={
+                error.password
+                  ? "border border-[#FF3939] inputLoginBorder "
+                  : "inputLoginBorder border border-[#D1D5DB] "
+              }
+            >
               <span>
                 <CiLock />
               </span>{" "}
@@ -88,7 +104,11 @@ export default function Login() {
                 id=""
                 placeholder="password"
               />
-              {error.password && <p>{error.password}</p>}
+              {error.password && (
+                <p className="text-[12px] font-[400] text-[#FF3939]">
+                  {error.password}
+                </p>
+              )}
             </div>
 
             <div className="LoginBorder hover:bg-[#BEADFF] mt-[24px] bg-[#633CFF] text-center">
