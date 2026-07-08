@@ -1,4 +1,96 @@
 
+
+.platformTrigger {
+    width: 100%;
+    height: 48px;
+    padding: 16px;
+
+    background: #fff;
+
+    border: 1px solid #D1D5DB;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+
+.platformTrigger[data-state="open"] {
+    border-color: #633CFF;
+    box-shadow:
+        0 0 0 1px #633CFF,
+        0 0 0 4px rgba(99, 60, 255, 0.12);
+}
+
+.arrow {
+
+    transition: .25s;
+
+}
+
+.platformTrigger[data-state="open"] .arrow {
+
+    transform: rotate(180deg);
+
+}
+
+.dropDwon {
+
+    background: #fff;
+
+    border: 1px solid #D1D5DB;
+
+    border-radius: 8px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .12);
+
+    overflow: hidden;
+
+    max-height: 343px;
+
+    overflow-y: auto;
+
+    z-index: 9999;
+
+}
+
+.platformItem {
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 14px 16px;
+
+    cursor: pointer;
+
+    outline: none;
+
+}
+
+.platformItem[data-highlighted] {
+
+    color: #633CFF;
+
+    background: #fff;
+
+}
+
+.platformItem[data-state="checked"] {
+
+    color: #633CFF;
+
+}
+
+
 @media (min-width: 1368px) {
     .emptySection{ grid-template-columns: minmax(560px, 1fr) minmax(808px, 1fr);}
 }
@@ -26,9 +118,9 @@
 
 
     .leftEmpty{
-        flex: 560px 1 1;
-        height: 858px;
-        width: 100%;
+        max-width: 560px ;
+        height: 834px;
+        
         min-width: none;
         border-radius: 12px;
         border: 1px solid white;
@@ -36,8 +128,8 @@
         
     }
     .rightEmpty{
-        flex: 808px 1 1;
-            height: 858px;
+        max-width: 808px ;
+            max-height: 834px;
             
             min-width: none;
            
@@ -68,23 +160,34 @@
         
             box-shadow: 0 0 0 3px rgba(99, 60, 255, 0.2);
     }
-    .custLinkBorder{
+ .custLinkBorder {
+     max-width: 728px;
+     height: 469px;
 
-   flex: 728px 1 1;
-   width: 100%;
-    border-radius: 12px;
-    
-    overflow: hidden;
-       
-    height: 469px;
- 
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    
-   
-    }
+     overflow: hidden;
 
+     display: flex;
+     flex-direction: column;
+ }
+
+ .scrollLink {
+     flex: 1;
+     overflow-y: auto;
+
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+
+     /* Firefox */
+     scrollbar-width: none;
+
+     /* IE and old Edge */
+     -ms-overflow-style: none;
+ }
+
+ .scrollLink::-webkit-scrollbar {
+     display: none;
+ }
         .flootBorder{
           border-top: 1px solid ;
           margin-top: 40px;
@@ -109,9 +212,9 @@
         }
 
                 .addLink{
-                    flex: 728px 1 1;
-                    width: 100%;
-                    max-height: 228px;
+                    
+                    
+                    height: 228px;
                     background-color: #FAFAFA;
                     padding: 20px;
                     border-radius: 12px;
@@ -120,13 +223,27 @@
                      
                 }
 
+                .customBorder{
+                    max-width: 808px;
+                    max-height: 739px;
+                    padding-top: 40px;
+                    padding-left: 40px;
+                    padding-right:40px ;
+                }
+
+                .subCustomBorder{
+                    max-width: 728px;
+                    max-height: 539px;
+
+                }
+
                 .BorderAddLink{
                     
-                    flex: 728px 1 1;
-                    max-height: 48px;
+                    max-width: 728px ;
+                    height: 48px;
                     background-color: #FFFFFF;
                     border-radius: 12px;
-                    padding: 16px;
+                    
                       border: 1px solid #633CFF;
                     display: flex;
                     color: #633CFF;
@@ -134,6 +251,15 @@
                     align-items: center;
                     
                    
+                }
+
+                .textBorder{
+                    width: 488px;
+                    height: 144px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                 }
                 .BorderAddLink:hover{
                     background-color: #EFEBFF;
@@ -154,17 +280,7 @@
 
                 
 
-                .dropDwon{
-                    border: 1px solid #D1D5DB;
-                    border-radius: 8px;
-                    padding: 12px 16px;
-                    width: 100%;
-                    height: 343px;
-                    background-color: #FFFFFF;
-                    margin-top: 4rem;
-                    overflow: hidden;
-                    overflow-y: scroll;
-                }
+                    
                 
   .boder{
     border:1px solid #D1D5DB;
@@ -181,12 +297,14 @@
         }
 
                 .custLink {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 20px;
-                    flex: 601px 1 1;
-                    width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                align-items: center;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    width: 688px ;
+                    
                     height: 344px;
                     background-color: #FAFAFA;
         
@@ -327,6 +445,16 @@
                               border-radius: 8px;
             
                           }
+
+  .textBorder {
+      width: 488px;
+      height: 144px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
                                                         .flootBorder>button:hover {
                                                             background-color: #BEADFF;
                                                         }
@@ -348,17 +476,7 @@
                                                                                                       height: 160px;
                                                                                                   }
 
-                                                                                                                                                                                                  .dropDwon {
-                                                                                                                                                                                                      border: 1px solid #D1D5DB;
-                                                                                                                                                                                                      border-radius: 8px;
-                                                                                                                                                                                                      padding: 12px 16px;
-                                                                                                                                                                                                      width: 100%;
-                                                                                                                                                                                                      height: 343px;
-                                                                                                                                                                                                      background-color: #FFFFFF;
-                                                                                                                                                                                                      margin-top: 4rem;
-                                                                                                                                                                                                      overflow: hidden;
-                                                                                                                                                                                                      overflow-y: scroll;
-                                                                                                                                                                                                  }
+                                                                                                                                                                                                
                                                                                                                                                                                                                                                                                                                                                                          .boder {
                                                                                                                                                                                                                                                                                                                                                                          border: 1px solid #D1D5DB;
                                                                                                                                                                                                                                                                                                                                                                              width: 100%;
@@ -513,7 +631,7 @@
         font-weight: 400;
         text-align: center;
         white-space: wrap;
-        word-break:break-all;
+        
     }
 
     .flootBorder {
@@ -542,17 +660,7 @@
         }
 
 
-        .dropDwon {
-            border: 1px solid #D1D5DB;
-            border-radius: 8px;
-            padding: 12px 16px;
-            width: 100%;
-            height: 343px;
-            background-color: #FFFFFF;
-            margin-top: 4rem;
-            overflow: hidden;
-            overflow-y: scroll;
-        }
+      
 
            .boder {
                border: 1px solid #D1D5DB;
@@ -566,4 +674,13 @@
            .hidIcon{
             display: none;
            }
+
+                         .textBorder {
+                             width: 488px;
+                             height: 144px;
+                             display: flex;
+                             flex-direction: column;
+                             justify-content: center;
+                             align-items: center;
+                         }
 }

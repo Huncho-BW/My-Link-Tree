@@ -4,7 +4,9 @@ body{
     background-color: whitesmoke;
 }
 
-
+body {
+    font-family: "Public Sans", sans-serif !important;
+}
 .navBord{
   
     height: 46px;

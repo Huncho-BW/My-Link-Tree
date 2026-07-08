@@ -5,7 +5,8 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import UserContext from "./ContextText";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-
+import RectangleIcon from "../assets/Rectangle 15.svg";
+import Subrectangle from "../assets/Subtract.svg";
 export default function LeftEmpty() {
   const { links, profile } = useContext(UserContext);
   const minSlot = 4;
@@ -20,12 +21,10 @@ export default function LeftEmpty() {
   return (
     <div className="  relative leftEmpty ">
       <div className=" absolute inset-0 flex items-center justify-center">
-        <IoPhonePortraitOutline
-          style={{
-            minWidth: "607px",
-            minHeight: "631px",
-          }}
-        />
+        <img src={RectangleIcon} alt="" srcset="" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img src={Subrectangle} alt="" />
+        </div>
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="absolute top-[200px] flex flex-col justify-center items-center gap-4">

@@ -42,7 +42,7 @@ const mapData = {
       id: 5,
       name: "Youtube",
       icon: <YouTubeIcon />,
-      color: "#2D68FF",
+      color: "#EE3939",
     },
     {
       id: 6,
