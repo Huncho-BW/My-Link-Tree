@@ -128,12 +128,12 @@
         
     }
     .rightEmpty{
-        max-width: 808px ;
-            max-height: 834px;
+        width: 808px ;
+        height: 834px;
             
-            min-width: none;
+            
            
-            padding: 40px;
+           
           
             display: flex;
             flex-direction: column;
@@ -161,9 +161,9 @@
             box-shadow: 0 0 0 3px rgba(99, 60, 255, 0.2);
     }
  .custLinkBorder {
-     max-width: 728px;
+     width: 728px;
      height: 469px;
-
+  
      overflow: hidden;
 
      display: flex;
@@ -190,11 +190,11 @@
  }
         .flootBorder{
           border-top: 1px solid ;
-          margin-top: 40px;
+         
             display: flex;
             flex: 808px 1 1;
             height: 95px;
-           padding: 24px;
+           
            justify-content: end;
         }
 
@@ -222,24 +222,30 @@
                      flex-direction: column;
                      
                 }
+                .bor{
+                    padding-top: 24px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    padding-bottom: 24px;
+                }
 
                 .customBorder{
-                    max-width: 808px;
-                    max-height: 739px;
-                    padding-top: 40px;
-                    padding-left: 40px;
-                    padding-right:40px ;
+                    width: 808px;
+                    height: 739px;
+                
+                  padding: 40px;
                 }
 
                 .subCustomBorder{
-                    max-width: 728px;
-                    max-height: 539px;
+                    width: 728px;
+                    height: 539px;
+                    
 
                 }
 
                 .BorderAddLink{
                     
-                    max-width: 728px ;
+                    width: 728px ;
                     height: 48px;
                     background-color: #FFFFFF;
                     border-radius: 12px;
@@ -291,10 +297,12 @@
 
   }
         .imgIcon {
-            max-width: 249px;
+            width: 249px;
     
             height: 160px;
         }
+
+
 
                 .custLink {
                   display: flex;
@@ -303,9 +311,9 @@
                 align-items: center;
                     padding-left: 20px;
                     padding-right: 20px;
-                    width: 688px ;
+                    width: 728px ;
                     
-                    height: 344px;
+                    height: 469px;
                     background-color: #FAFAFA;
         
                 }
@@ -343,12 +351,12 @@
          }
 
                          .rightEmpty {
-                             flex: 808px 1 1;
-                             min-height: 858px;
+                             flex: 721px 1 1;
+                             height: 874px;
             
-                             min-width: none;
+                            
             
-                             padding: 40px;
+                           
             
                              display: flex;
                              flex-direction: column;
@@ -359,28 +367,36 @@
                              
                          }
             
+          .subCustomBorder {
+              flex: 641px 1 1 ;
+              height: 579px;
             
-                                                .addLink {
-                                                    flex: 640px 1 1;
-                                                    width: 100%;
-                     width:none;                               max-height: 228px;
-                                                    background-color: #FAFAFA;
-                                                    padding: 20px;
-                                                    border-radius: 12px;
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                   
-                        
-                                                }
+        
+
+    
+          }
+          .addLink {
+              flex: 640px 1 1;
+              width: 100%;
+              width: none;
+              max-height: 228px;
+              background-color: #FAFAFA;
+              padding: 20px;
+              border-radius: 12px;
+              display: flex;
+              flex-direction: column;
+    
+    
+          }
+          
                         
                                                 .BorderAddLink {
                         
-                                                    flex: 688px 1 1;
+                                                    flex: 641px 1 1 ;
                                                     height: 48px;
                                                     background-color: #FFFFFF;
                                                     border-radius: 12px;
-                                                        padding: 16px;
-                                                        border: 1px solid #633CFF;
+                                                                                                            border: 1px solid #633CFF;
                                                         display: flex;
                                                         color: #633CFF;
                                                         justify-content: center;
@@ -397,7 +413,7 @@
                                                     flex: 688px 1 1;
                                                     height: 48px;
                                                     background-color: #FFFFFF;
-                                                    padding: 16px;
+                                                    
                                                       
                                                     display: flex;
                                                     justify-content: start;
@@ -410,30 +426,53 @@
                                                                                                 
                                                                                                     box-shadow: 0 0 0 3px rgba(99, 60, 255, 0.2);
                                                                                                 }
-                         .custLinkBorder {
-            
-                             flex: 641px 1 1;
-                             width: 100%;
-                             border-radius: 12px;
-                            
-                             min-height: 509px;
-                             
-                             display: flex;
-                             flex-direction: column;
-                             gap: 12px;
-                             
-                            margin-top: 12px;
-                             
-                               
-                         }
-            
+                       
+ 
+                                                                                                
+  .custLinkBorder {
+      flex: 641px 1 1;
+      height: 509px;
+      
+border-radius: 12px;
+      overflow: hidden;
+
+      display: flex;
+      flex-direction: column;
+  }
+.scrollLink {
+    flex: 1;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    /* Firefox */
+    scrollbar-width: none;
+
+    /* IE and old Edge */
+    -ms-overflow-style: none;
+}
+
+.scrollLink::-webkit-scrollbar {
+    display: none;
+}
+
+
+        .bor {
+            padding-top: 24px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 24px;
+        }
+
                          .flootBorder {
                              border-top: 1px solid;
-                             margin-top: 40px;
+                             
                              display: flex;
-                             flex: 808px 1 1;
+                             flex: 721px 1 1;
                              height: 95px;
-                         padding: 24px;
+                         
                              justify-content: end;
                          }
 
@@ -455,23 +494,33 @@
       align-items: center;
   }
 
+        .customBorder {
+            flex: 721px 1 1 ;
+            width: 100%;
+            height: 779px;
+    
+            padding: 40px;
+        }
+
                                                         .flootBorder>button:hover {
                                                             background-color: #BEADFF;
                                                         }
-                                                 .custLink {
-                                                    display: flex;
-                                                    justify-content: center;
-                                                    align-items: center;
-                                                     padding: 20px;
-                                                     flex: 601px 1 1;
-                                                     width: 100%;
-                                                     height: 344px;
-                                                    background-color: #FAFAFA;
-                      
-                                                 }
+          .custLink {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding-left: 20px;
+              padding-right: 20px;
+              flex: 601px 1 1;
+    
+              height: 344px;
+              background-color: #FAFAFA;
+    
+          }
 
                                                                                                   .imgIcon {
-                                                                                                      max-width: 249px;
+                                                                                                      width: 249px;
                                                 
                                                                                                       height: 160px;
                                                                                                   }
@@ -517,12 +566,10 @@
 
     .rightEmpty {
         flex: 375px 1 1;
-    min-height: 738px;
+    height: 738px;
        
 
-        min-width: none;
-
-        padding: 40px;
+       padding: 16px;
 
         display: flex;
         flex-direction: column;
@@ -536,6 +583,17 @@
         font-size: 24px;
         white-space: nowrap;
     }
+
+         .subCustomBorder {
+             flex: 295px 1 1;
+             height: 447px;
+    
+    
+    
+    
+         }
+
+
 
 
     .addLink {
@@ -553,11 +611,11 @@
 
     .BorderAddLink {
 
-        flex: 688px 1 1;
+        flex: 295px 1 1;
         height: 48px;
         background-color: #FFFFFF;
         border-radius: 12px;
-            padding: 16px;
+          
             border: 1px solid #633CFF;
             display: flex;
             color: #633CFF;
@@ -576,7 +634,7 @@
         flex: 225px 1 1;
         max-height: 48px;
         background-color: #FFFFFF;
-        padding: 16px;
+       
       gap: 10px;
         display: flex;
         justify-content: start;
@@ -591,26 +649,52 @@
     .custLinkBorder {
 
         flex: 295px 1 1;
-        width: 100%;
+       
         border-radius: 12px;
-        
+        overflow: hidden;
 
-        min-height: 377px;
-        
-       max-width: 706px;
-      margin-top: 12px;
+        height: 377px;
+      
+   
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        
         
         
 
     }
 
+.scrollLink {
+    flex: 1;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    /* Firefox */
+    scrollbar-width: none;
+
+    /* IE and old Edge */
+    -ms-overflow-style: none;
+}
+
+.scrollLink::-webkit-scrollbar {
+    display: none;
+}
+.bor {
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 24px;
+}
+
+
+
     .custLink{
         padding: 20px;
         flex: 295px 1 1;
-            width: 100%;
+         
             max-height: 377px;
         background-color: #FAFAFA;
     }
@@ -636,10 +720,9 @@
 
     .flootBorder {
         border-top: 1px solid;
-        margin-top: 24px;
+       
         display: flex;
         flex: 311px 1 1;
-        padding: 16px;
         max-height: 45px;
         
         justify-content: center;
@@ -675,12 +758,14 @@
             display: none;
            }
 
-                         .textBorder {
-                             width: 488px;
-                             height: 144px;
-                             display: flex;
-                             flex-direction: column;
-                             justify-content: center;
-                             align-items: center;
-                         }
+                         
+
+
+                                                                 .customBorder {
+                                                                     flex: 721px 1 1;
+                                                                     width: 100%;
+                                                                     height: 779px;
+                                
+                                                                     padding: 24px;
+                                                                 }
 }

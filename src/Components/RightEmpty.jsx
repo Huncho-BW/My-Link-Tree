@@ -86,18 +86,36 @@ export default function RightEmpty() {
                 ))}
               </div>
             ) : (
-              <div className="custLink">...</div>
+              <div className="custLink">
+                <div className=" flex flex-col items-center justify-center">
+                  <img className="imgIcon" src={handOntop} alt="Hand Icon" />
+                </div>
+
+                <div className=" textBorder">
+                  <h1 className=" text-center [@media(max-width:640px)]:text-[24px]  font-[700] text-[32px] text-[#333333]">
+                    Let’s get you started
+                  </h1>
+
+                  <p className="text-[16px] text-center text-[#888888] ">
+                    Use the “Add new link” button to get started. Once you have
+                    more than one link, you can reorder and edit them. We’re
+                    here to help you share your profiles with everyone!
+                  </p>
+                </div>
+              </div>
             )}
           </div>
         </div>
       </div>
 
-      <div className="flootBorder">
-        {/* Save Button */}
+      <div className="bor">
+        <div className="flootBorder bor">
+          {/* Save Button */}
 
-        <button type="button" onClick={handleSave}>
-          Save
-        </button>
+          <button type="button" onClick={handleSave}>
+            Save
+          </button>
+        </div>
       </div>
     </div>
   );
